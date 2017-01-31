@@ -2,15 +2,41 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
 	.banner_content .banner_text:first-child{
 		margin-right: 20%;
 	}
 
+
+	footer .footer_content{
+		text-align: center;
+	}
+
+	footer .right_side{
+		margin-top: 5px;
+	}
+
+	.norm_content .dop:before{
+		clear: both;
+		content: "";
+		display: block;
+	}
+
+	.norm_content .dop{
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	.norm_content .dop .item{}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	.norm_content .dop .item .icon{
+		margin-right: 15px;
+	}
 
 	header{
 		padding-top: 70px;
@@ -81,7 +107,7 @@
 	}
 
 	.banner_content .banner_text:first-child{
-		margin-right: 10%;
+		margin-right: 0%;
 	}
 
 	.thr_wrap .item .title{
@@ -144,10 +170,34 @@
 		font-size: 18px;
 	}
 
+	.banner_content .text_content{
+		width: 50%;
+	}
+
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	
+	.norm_content .dop .item{
+		width: 100%;
+		margin: 0 0 15px;
+	}
+
+
+	.inner_title{
+		font-size: 23px;
+	}
+
+	.about_icon_set .item:nth-child(odd){
+		margin-right: .5%;
+	}
+
+	.about_icon_set .item{
+		width: 45%;
+		margin-right: 0;
+	}
 
 	.text_content{
 		width: 70%;
@@ -196,6 +246,34 @@
 }
 
 @media only screen and (max-width : 550px){
+
+	.norm_1,
+	.norm_2{
+		width: 50%;
+	}
+
+	.norm_content .top_p{
+		margin-bottom: 15px;
+	}
+
+	.norm_content{
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.about_icon_set .item .icon{
+		margin-bottom: 10px;
+	}
+
+	.about_icon_set .item:nth-child(odd){
+		margin-right: 0;
+	}
+
+	.about_icon_set .item{
+		width: 100%;
+		margin-bottom: 30px;
+	}
 
 	.pre_header_content img{
 		width: auto !important;
@@ -317,6 +395,19 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	.norm_1,
+	.norm_2{
+		width: auto;
+		float: none;
+		display: block;
+		margin: 0 auto 10px;
+
+	}
+
+	.inner_title{
+		font-size: 20px;
+	}
 
 	.thr_wrap .item .title{
 		font-size: 22px;
