@@ -20,6 +20,12 @@ strong{
 	font-weight: bold;
 }
 
+ul.disc{
+	list-style-type: disc;
+	list-style-position: outside;
+	padding-left: 20px;
+}
+
 .medium{
 	font-weight: 500;
 }
@@ -186,7 +192,7 @@ header{
 	transition: opacity .2s linear;
 }
 
-.mnu_list li:hover a{
+.mnu_list li:hover > a{
 	color: #ead0a2;
 }
 
@@ -206,13 +212,52 @@ header{
 	background-position: center 80%;
 	-webkit-background-size: 80px ;
 	background-size: 80px 9px;
+}
 
+.mnu_list li.submenu ul li:after{
+	display: none!important;
 }
 
 .mnu_list li:hover:after{
 	content: "";
 	opacity: 1;
 
+}
+
+.mnu_list .mnu > li.submenu{
+	position: relative;
+}
+
+.mnu_list .mnu > li.submenu > a{
+	padding: 0 90px;
+
+}
+
+.mnu_list li > ul{
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	background-color: #b24567;
+	margin-top: -1px;
+	display: none;
+}
+
+
+.mnu_list li > ul li{
+	line-height: 55px;
+	text-align: center;
+}
+
+.mnu_list .mnu > li.submenu > ul li.sub > ul{
+	right: -100%;
+	margin-top: 0;
+	top: 0;
+	display: none;
+}
+
+.mnu_list .mnu > li.submenu > ul li.sub:hover > ul,
+.mnu_list li.submenu:hover > ul{
+	display: block;
 }
 
 /*Banner*/
@@ -347,6 +392,10 @@ header{
 
 .pre_header_content img:last-child{
 	margin-right: 0;
+}
+
+.main{
+	min-height: 50vh;
 }
 
 .main_descr{
@@ -487,13 +536,13 @@ footer.without_inst{
 .footer_list{
 	display: inline-block;
 	vertical-align: top;
-	padding-right: 50px;
+	padding-right: 15%;
 }
 
 
 .footer_list.footer_mnu{
-	padding-left: 30px;
-	padding-right: 0;
+/*	padding-left: 30px;
+padding-right: 0;*/
 }
 
 .footer_list li {
@@ -527,7 +576,7 @@ footer.without_inst{
 footer .right_side{
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 40px;
+	/*margin-left: 40px;*/
 	margin-top: -10px;
 }
 
@@ -1144,9 +1193,67 @@ footer .lic{
 	color: #b24567;
 }
 
+.about_middle_block{
+	padding: 50px 0;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.about_middle_block .left{
+	width: 54%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 7.5%;
+}
+
+.about_middle_block .left ul.disc li{
+	margin-bottom: 15px;
+}
+
+.about_middle_block .left ul.disc li:last-child{
+	margin-bottom: 0;
+}
+
+.about_middle_block .right{
+	width: 38%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.about_middle_block .right img{
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bolded_title{
+	font-size: 35px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	line-height: 38px;
+}
+
+.bolded_title i.rights{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 13px;
+}
+
+.about_middle_block .text{
+	font-size: 20px;
+	color: #000;
+	line-height: 26px;
+	font-weight: 300;
+}
+
 .about_block{
 	padding-top: 35px;
 	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 50px;
 }
 
 .about_block .item{
@@ -1182,11 +1289,11 @@ footer .lic{
 	margin-bottom: 5px;
 }
 
-.info_block.beige{
+.beige{
 	color: #ae9366;
 }
 
-.info_block.pink{
+.pink{
 	color: #b24466;
 }
 
@@ -1224,6 +1331,60 @@ footer .lic{
 	top: 0;
 	bottom:0;
 	transform: translateY(100px);
+}
+
+.about_bottom_block{
+	padding-top: 70px;
+}
+
+.about_bottom_items {
+	padding-top: 70px;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about_bottom_items .item{
+	/*display: inline-block;*/
+	width: 21%;
+	margin-right: 5%;
+
+}
+
+.about_bottom_items .item .icon{
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	background-color: #faf7f0;
+	vertical-align: top;
+	line-height: 145px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.about_bottom_items .item .icon img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.about_bottom_items .item .text{
+	font-weight: 100;
+	font-size: 21px;
+	line-height: 32px;
+}
+
+.about_bottom_items .item:last-child{
+	margin-right: 0;
+}
+
+.about_bottom_items .item .text{
+	text-align: left;
 }
 
 /*Vitaminki*/
@@ -1292,4 +1453,64 @@ body .vit_container .vit_c{
 body .vit_container .vit_mg{
 	top: 210px;
 	left: 340px;
+}
+
+.content_404{
+	padding-top: 115px;
+}
+
+.content_404 .left{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 12%;
+}
+
+.content_404 .left .text{
+	font-size: 40px;
+	font-weight: 300;
+	color: #000;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.content_404 .left .t_404{
+	font-size: 350px;
+	color: #b24466;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.content_404 .left .more .title{
+	font-size: 44px;
+	color: #ae9366;
+	text-align: center;
+	font-weight: 300;
+}
+
+.content_404 .left .link_container{
+	text-align: center;
+	padding-top: 30px;
+}
+
+.content_404 .left .link_container .sub_bottom_btn{
+	display: inline-block;
+	margin-right: 60px;
+	min-width: 200px;
+}
+
+.content_404 .left .link_container .sub_bottom_btn:last-child{
+	margin-right: 0;
+}
+
+.content_404 .right{
+	width: 38%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.content_404 .right img{
+	width: 100%;
 }

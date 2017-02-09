@@ -32,10 +32,28 @@
 		max-width: 100%;
 		margin: 0;
 	}
+
+	.content_404 .left .t_404{
+		font-size: 300px;
+	}
+
+	.content_404 .left .link_container .sub_bottom_btn{
+		min-width: 170px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	.about_middle_block .text{
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.about_bottom_items .item .text{
+		font-size: 18px;
+		line-height: 26px;
+	}
 
 	.about_block .item{
 		width: 100%;
@@ -110,7 +128,7 @@
 		padding-top: 0;
 	}
 
-	.mnu li:last-child{
+	.mnu > li:last-child{
 		padding-bottom: 25px;
 		border-bottom: 0;
 	}
@@ -130,6 +148,41 @@
 
 	.mnu li a{
 		display: block;
+		padding: 0!important;
+	}
+
+	.mnu_list li > ul{
+		position: relative;
+		display: block !important;
+	}
+
+	.mnu_list li > ul a{
+		text-align: right;
+	}
+
+	.mnu_list li > ul{
+		padding: 15px 0 0;
+	}
+
+	.mnu_list li > ul li{
+		padding: 0;
+		border: none;
+		line-height: initial;
+		padding: 5px 0;
+	}
+
+	.mnu_list li > ul li a{
+		font-size: 18px;
+	}
+
+	.mnu_list .mnu > li.submenu > ul li.sub > ul{
+		right: 0;
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	.mnu_list .mnu > li.submenu > ul li.sub > ul li{
+		padding-bottom: 0;
 	}
 
 	.banner_content .banner_text:first-child{
@@ -200,11 +253,113 @@
 		width: 50%;
 	}
 
+
+	body .vit_container .vit_e{
+		left: 0px;
+		top: 17px;
+	}
+
+	body .vit_container .vit_fe{
+		left: 0;
+		right: 0;
+		top: 0px;
+		margin: 0 auto;
+	}
+
+	body .vit_container .vit_imb{
+		left: 28%;
+		top: 135px;
+	}
+
+	body .vit_container .vit_glu{
+		left: auto;
+		right: 5%;
+		top: 105px;
+	}
+
+	body .vit_container .vit_fol{
+		top: 230px;
+		left: 10%;
+	}
+
+	body .vit_container .vit_rut{
+		top: 230px;
+		left: 55%;
+	}
+
+	body .vit_container .vit_dud{
+		left: 0;
+		right: 0;
+		top: 0px;
+		margin: 0 auto;
+	}
+
+	body .vit_container .vit_zn{
+		left: 0px;
+		top: 95px;
+	}
+
+	body .vit_container .vit_bro{
+		left: auto;
+		top: 55px;
+		right: 0;
+	}
+
+	body .vit_container .vit_vit{
+		left: 235px;
+		top: 145px;
+	}
+
+	body .vit_container .vit_c{
+		top: 235px;
+		left: 110px;
+	}
+
+	body .vit_container .vit_mg{
+		top: 210px;
+		left: auto;
+		right: 30px;
+	}
+
+	.content_404 .left .text{
+		font-size: 32px;
+	}
+
+	.content_404 .left .t_404{
+		font-size: 250px;
+	}
+
+	.content_404 .left .more .title{
+		font-size: 34px;
+	}
+
+	.content_404 .left .link_container .sub_bottom_btn{
+		min-width: 140px;
+	}
+
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.content_404 .left .link_container .sub_bottom_btn{
+		margin-right: 20px;
+	}
+
+	.content_404 .left .t_404{
+		font-size: 200px;
+		margin-bottom: 15px;
+	}
+
+	.content_404 .left .text{
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.content_404 .left .more .title{
+		font-size: 26px;
+	}
 
 	.popup_spec{
 		top: 90px;
@@ -323,6 +478,188 @@
 	.under_footer{
 		font-size: 45px;
 	}
+
+
+	.vit_container a.vit_link{
+		max-width: 75px;
+	}
+
+	body .vit_container .vit_e{
+		left: 15%;
+		top: 17px;
+	}
+
+	body .vit_container .vit_fe{
+		left: 0;
+		right: 0;
+		top: 0px;
+		margin: 0 auto;
+	}
+
+	body .vit_container .vit_imb{
+		left: 28%;
+		top: 90px;
+	}
+
+	body .vit_container .vit_glu{
+		left: auto;
+		right: 14%;
+		top: 50px;
+	}
+
+	body .vit_container .vit_fol{
+		top: 195px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	body .vit_container .vit_rut{
+		top: 125px;
+		left: 55%;
+	}
+
+	body .vit_container .vit_zn{
+		left: 20%;
+		top: 70px;
+	}
+
+	body .vit_container .vit_bro{
+		left: auto;
+		top: 55px;
+		right: 15%;
+	}
+
+	body .vit_container .vit_vit{
+		left: 0;
+		top: 125px;
+		right: 0;
+		margin: auto;
+	}
+
+	body .vit_container .vit_c{
+		top: 185px;
+		left: 25%;
+	}
+
+	body .vit_container .vit_mg{
+		top: 180px;
+		left: auto;
+		right: 22%;
+	}
+
+	.vit_container{
+		min-height: 280px;
+	}
+
+	.info_block strong{
+		font-size: 30px;
+	}
+
+	.info_block {
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 16px;
+	}
+
+	.info_block small{
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.about_block{
+		padding: 25px 0 15px;
+	}
+
+	.about_middle_block{
+		padding: 25px 0;
+	}
+
+	.about_middle_block .left,
+	.about_middle_block .right{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.about_middle_block .text {
+		font-size: 16px;
+		color: #000;
+		line-height: 22px;
+		font-weight: 300;
+		margin-bottom: 15px;
+	}
+
+	.about_middle_block .right img{
+		max-width: 455px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.bolded_title{
+		margin-bottom: 15px;
+	}
+
+	.about_block .item .kapsula{
+		max-width: 60%;
+	}
+
+	.about_bottom_block{
+		padding-top: 25px;
+	}
+
+	.about_bottom_items{
+		padding-top: 20px;
+	}
+
+	.about_bottom_items .item{
+		width: 45%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+
+	.about_bottom_items .item .text{
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.about_bottom_items .item .icon{
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width : 680px){
+	.content_404 .left{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	.content_404 .right{
+		width: 100%;
+		margin: 0;
+		padding-bottom: 30px;
+		display: none;
+	}
+
+	.content_404 .right img{
+		max-width: 460px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.content_404{
+		padding-top: 30px;
+	}
+
+	.content_404 .left .t_404{
+		font-size: 130px;
+		margin-bottom: 0;
+	}
+
+	.content_404 .left .text{
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (max-width : 550px){
@@ -433,7 +770,8 @@
 	}
 
 	.main_pluses .item .text{
-		line-height: 23px;
+		line-height: initial;
+		font-size: 14px;
 	}
 
 	.main_pluses{
@@ -531,10 +869,33 @@
 		width: 100%;
 		margin: 25px auto;
 	}
+
+	.about_block .about_2ph{
+		max-width: 60%;
+	}
+
+	.about_block .item .kapsula{
+		max-width: 80%;
+	}
+
+	.bolded_title{
+		font-size: 28px;
+		line-height: 33px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	.content_404 .left .link_container .sub_bottom_btn{
+		display: block;
+		margin: 0 auto 10px!important;
+	}
+
+	.content_404 .left .link_container{
+		padding-top: 20px;
+	}
 
 	.simp_pms{
 		float: none;
@@ -608,6 +969,25 @@
 		font-size: 18px;
 		padding: 0 15px 10px;
 	}
+
+	.vit_container{
+		margin-top: 0;
+	}
+
+	.vit_container a.vit_link{
+		max-width: 60px;
+	}
+
+	.about_bottom_items .item{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.about_bottom_items .item .text{
+		text-align: center;
+	}
+
+
 
 }
 
