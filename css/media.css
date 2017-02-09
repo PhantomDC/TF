@@ -28,11 +28,37 @@
 		padding-top: 30px;
 	}
 
-	.norm_content .dop .item{}
+	.about_block .item .kapsula{
+		max-width: 100%;
+		margin: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	.about_block .item{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.about_block .about_2ph{
+		position: relative;
+		display: block;
+		margin: 15px auto 35px;
+		transform: translateY(0);
+
+	}
+
+	.vit_container{
+		display: inline-block;
+	}
+
+	.page_title{
+		font-size: 28px;
+		line-height: 30px;
+	}
 
 	.norm_content .dop .item .icon{
 		margin-right: 15px;
@@ -179,6 +205,63 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.popup_spec{
+		top: 90px;
+		padding: 25px 15px 25px;
+	}
+
+	.popup_text{
+		font-size: 18px;
+		line-height: 26px;
+
+	}
+
+	.content_text img.fr{
+		width: auto;
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	.pdf_link{
+		float: none;
+		display: block;
+		width: 100%;
+		font-size: 18px;
+		padding: 0;
+		padding-bottom: 30px;
+		text-align: center;
+
+	}
+
+	.simp_pms{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.simp_2{
+		width: auto;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.page_title{
+		font-size: 25px;
+		line-height: 28px;
+		margin-bottom: 25px;
+	}
+
+	.plan_content,
+	.content_text{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.plan_content h3{
+		margin: 25px 0;
+	}
 	
 	.norm_content .dop .item{
 		width: 100%;
@@ -240,15 +323,66 @@
 	.under_footer{
 		font-size: 45px;
 	}
-
-
-
 }
 
 @media only screen and (max-width : 550px){
 
+	.popup_spec{
+		top: 70px;
+		padding: 15px 15px 25px;
+	}
+
+	.popup_text{
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.btn_wrap a{
+		display: block;
+		margin: 0 auto 10px!important;
+		width: 80%;
+	}
+
+	.popup_spec .popup_title{
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+
+	.faq_content .item .faq_title{
+		font-size: 18px;
+	}
+
+	.faq_content .item .faq_ask{
+		padding: 15px 10px;
+	}
+
+	.faq_content .item .faq_ask p{
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.calendar_wrap{
+		background-color: #faf7f0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: 25px;
+	}
+
+	.calendar_main_banner .appl_icons{
+		bottom: 0;
+	}
+
+	.plan_content h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin: 15px 0;
+	}
+
 	.norm_1,
-	.norm_2{
+	.norm_2,
+	.plan_1,
+	.plan_2{
 		width: 50%;
 	}
 
@@ -353,6 +487,7 @@
 	.main .bad{
 		font-size: 18px;
 		line-height: 25px;
+
 	}
 
 	footer .footer_content{
@@ -391,13 +526,32 @@
 	.thr_wrap .item .title{
 		font-size: 27px;
 	}
+
+	.reviews{
+		width: 100%;
+		margin: 25px auto;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.simp_pms{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+
+	.simp_pms .item{
+		width: 100%;
+		margin: 0 0 15px;
+		max-width: none;
+	}
+
 	.norm_1,
-	.norm_2{
+	.norm_2,
+	.plan_1,
+	.plan_2{
 		width: auto;
 		float: none;
 		display: block;
