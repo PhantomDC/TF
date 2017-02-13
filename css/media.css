@@ -40,6 +40,11 @@
 	.content_404 .left .link_container .sub_bottom_btn{
 		min-width: 170px;
 	}
+
+	.mnu_list li a{
+		font-size: 21px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -112,6 +117,16 @@
 		width: 100%;
 		height: auto;
 		top: 69px;
+		-webkit-transition: all .2s linear;
+		-o-transition: all .2s linear;
+		transition: all .2s linear;
+	}
+
+	.mnu.dragged{
+		-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		transform: translateX(100%);
 	}
 
 	.mnu li{
@@ -147,12 +162,16 @@
 	}
 
 	.mnu li a{
-		display: block;
+		display: inline-block;
 		padding: 0!important;
+		width: 80%;
+	}
+
+	.mnu li ul.submenu li a{
+		width: 100%;
 	}
 
 	.mnu_list li > ul{
-		position: relative;
 		display: block !important;
 	}
 
@@ -161,7 +180,9 @@
 	}
 
 	.mnu_list li > ul{
-		padding: 15px 0 0;
+		padding: 0 50px 0 15px;
+		top: 0;
+		left: -100%;
 	}
 
 	.mnu_list li > ul li{
@@ -169,10 +190,23 @@
 		border: none;
 		line-height: initial;
 		padding: 5px 0;
+		border-right: 2px solid #fff;
+		padding-right: 15px;
 	}
 
-	.mnu_list li > ul li a{
-		font-size: 18px;
+	.mnu_list li > ul .prev{
+
+		position: absolute;
+		top: 0;
+		z-index: 9;
+		right: 0;
+		width: 50px;
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+		cursor: pointer;
+		height: 100%;
+		display: block;
 	}
 
 	.mnu_list .mnu > li.submenu > ul li.sub > ul{
@@ -335,6 +369,19 @@
 
 	.content_404 .left .link_container .sub_bottom_btn{
 		min-width: 140px;
+	}
+
+	.mnu_list .mnu > li.submenu{
+		position: static;
+	}
+
+	.mnu .next{
+		display: inline-block;
+		width: 19%;
+		text-align: left;
+		color: #fff;
+		font-size: 19px;
+		cursor: pointer;
 	}
 
 }

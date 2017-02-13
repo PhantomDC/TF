@@ -224,6 +224,11 @@ header{
 
 }
 
+.mnu .next,
+.mnu .prev{
+	display: none;
+}
+
 .mnu_list .mnu > li.submenu{
 	position: relative;
 }

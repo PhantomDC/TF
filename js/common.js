@@ -11,6 +11,11 @@ $(document).ready(function(){
 
 	});
 
+	$(".js-strafe-mnu").on("click",function(){
+		var mnu = $(".mnu");
+		$(this).hasClass("next") ? mnu.addClass("dragged") : mnu.removeClass("dragged");
+	});
+
 	$(".reviews .item").each(function(ind){
 
 		var rating = $(".reviews .item:eq("+ind+") .stars").data("rating");
